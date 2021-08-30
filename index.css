@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    perspective: 100rem;
+    overflow: hidden;
+}
+.img-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    overflow: hidden;
+}
+.img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity:0.3;
+    animation-name: sanu;
+    animation-duration: 15s;
+}
+@keyframes sanu{
+    0%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.banner{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+.banner h1{
+    font-family: serif;
+    font-size: 5.5rem;
+    font-weight: 100;
+    color: #fff;
+    width: 50%;
+    opacity: 0;
+    animation: moveBanner 1s .5s forwards;
+}
+.banner p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, .1);
+    opacity: 0;
+    animation: moveBanner 1s .7s forwards;
+}
+.banner button a{
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.banner button{
+    width: 13rem;
+    height: 3.6rem;
+
+    color: rgb(4, 8, 252);
+    background-color:transparent;
+    border:solid 2px rgba(246, 247, 250, 0.726) ;
+    font-family: fantasy;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: moveBanner 1s .9s forwards;
+    border-radius: .5rem;
+    margin-top: 2rem;
+    background-color: chocolate;
+}
+.banner button:hover{
+    background-color: rgba(241, 35, 35, 0.637);
+}
+@keyframes moveBanner{
+    0%{
+        transform: translateY(40rem) rotateX(20deg);
+    }
+    100%{
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+    }
+}
+
+.navbar-link {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+   padding: 0.5rem;
+   transition: transform 0.5s;
+
+}
+
+.navbar-link:hover{
+    transform: scale(1.2);
+    color: #000;
+}
+.navbar a{
+    text-align: center;
+    color: rgb(253, 9, 9);
+    margin-left: 3rem;
+}
+.navbar{
+    background-color: rgba(95, 100, 161, 0.555);
+    padding-top : 2rem; 
+}
+.section-2{
+   
+    position:relative;
+    width: 100%;
+  
+}
+.section-4-heading{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4rem;
+    width: 19rem;
+    text-align: center;
+    margin-left: 32rem;
+    border-bottom: solid 0.2rem rgba(253, 9, 9, 0.829);
+}
+.para{
+    position: absolute;
+    margin-top: 1.5rem;
+}
+.section-4-heading-wrapper{
+    position: relative;
+}
+.p1{
+    margin-top: -40rem;
+    margin-left: 48.5rem;
+    font-size: 2.2rem;
+}
+.p1 span{
+    margin-left: 18rem;
+    font-size: 1.35rem;
+    font-style: italic;
+    color: rgb(233, 13, 13);
+}
+.p2{
+   margin-top: 3rem;
+    margin-left: 48.5rem;
+    font-size: 2.2rem;
+}
+.p2 span{
+    margin-left: 18rem;
+    font-size: 1.35rem;
+    font-style: italic;
+    color: rgb(233, 13, 13);
+}
+.p3{
+    margin-top: 3rem;
+     margin-left: 48.5rem;
+     font-size: 2.2rem;
+ }
+ .p3 span{
+    margin-left: 18rem;
+    font-size: 1.35rem;
+    font-style: italic;
+    color: rgb(233, 13, 13);
+}
+
+.section-3{
+    position: relative;
+    margin-top: -0.3rem;
+    padding-left: 2rem;
+    padding-right: 1.6rem;
+   
+}
+.section-3{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNz-XfKhmur7WFQtqcZJhv6p7nXI3Gqocc4g&usqp=CAU);
+    no-repeat center center fixed;
+    background-size: cover;
+    
+}
+.img1{
+    position: absolute;
+}
+.doc2{
+   margin-top: 2rem;
+    margin-left: 60rem;
+    padding-right: 10rem;
+}
+.doc1{
+    padding-top: .6rem;
+    margin-left: -2rem;
+}
+.doc3{
+    padding-bottom: .5rem;
+    margin-left: -1rem;
+}
+.impa{
+    position: absolute;
+}
+.imp1{
+    margin-top: -40rem;
+    margin-left: 15rem;
+    font-size: 2rem;
+}
+.imp2{
+   margin-top: 4rem;
+   margin-left: 4rem;
+    font-size: 2rem;
+}
+.imp3{
+    margin-top: 4.2rem;
+    margin-left: 15rem;
+    font-size: 2rem;
+}
+
+.section-4{
+    position: relative;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzjW45_1AHC87TBlvxPTIhbbnx6N0oA2iUkA&usqp=CAU);
+    no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 90.5%;
+}
+
+.secim1{
+    padding-top: 0.3rem;
+    padding-left: 2rem;
+}
+.secim2{
+    margin-left: 22rem;
+    margin-top: -11.5rem;
+}
+.secim3{
+    margin-left: 44rem;
+    margin-top: -12rem;
+}
+.secim4{
+    margin-left: 67rem;
+    margin-top: -11.5rem;
+}
+.secim5{
+   margin-top: -0.9rem;
+    padding-left: 0.7rem;
+}
+.secim6{
+    margin-left: 22rem;
+    margin-top: -11rem;
+}
+.secim7{
+    margin-left: 43rem;
+    margin-top: -12.5rem;
+}
+.secim8{
+    margin-left: 66rem;
+    margin-top: -9rem;
+}
+.secim9{
+   margin-top: -1.5rem;
+    padding-left: 2rem;
+}
+.secim10{
+    margin-left: 22.5rem;
+    margin-top: -11rem;
+}
+.secim11{
+    margin-left: 43rem;
+    margin-top: -12.5rem;
+}
+.secim12{
+    margin-left: 63rem;
+    margin-top: -9.7rem;
+}
+.section-5{
+    background-color: rgba(223, 221, 116, 0.651);
+}
+#slider{
+    overflow: hidden;
+    padding-bottom: 8rem;
+}
+
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 10s slider infinite;  
+}
+.ss1{
+    margin-top: -5rem;
+    position: absolute;
+}
+.ss2{
+    margin-left: 45rem;
+    position: absolute;
+    margin-top: 3rem;
+}
+.ss3{
+    margin-left: 70rem;
+    position: absolute;
+    margin-top: 3rem;
+}
+.ss4{
+    margin-left: 85rem;
+    position: absolute;
+    margin-top: 3rem;
+}
+.ss5{
+    margin-left: 115rem;
+    position: absolute;
+    margin-top: 3rem;
+}
+.ss6{
+    margin-left: 135rem;
+    position: absolute;
+    margin-top: 3rem;
+}
+.ss7{
+    margin-left: 170rem;
+    position: absolute;
+    margin-top: 3rem;
+}
+.ss8{
+    margin-left: 198rem;
+    position: absolute;
+    margin-top: 3rem;
+}
+.ss9{
+    margin-left: 230rem;
+    position: absolute;
+    margin-top: 3rem;
+}
+.ss10{
+    margin-left: 270rem;
+    position: absolute;
+    margin-top: 3rem;
+}
+.ss12{
+    margin-left: 310rem;
+    position: absolute;
+    margin-top: 3rem;
+}
+.ss13{
+    opacity: 0;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    40% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+.section-6-heading{
+    background-color: rgb(245, 240, 245);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: -11.6rem;
+    font-size: 4rem;
+    
+    text-align: center;
+   
+    border-bottom: solid 0.2rem rgba(253, 9, 9, 0.829);
+}
+.backg{
+    
+    margin-top: 4.6rem;
+    padding-top: 7rem;
+    width: 1348px;
+    height: 590px;
+   
+    background: url(bg1.jpg);
+    animation: slide 20s infinite;
+}
+@keyframes slide {
+    25% {
+        background: url(bg1.jpg);
+    }
+    50% {
+        background: url(bg2.jpg);
+    }
+    75% {
+        background: url(bg3.jpg);
+    }
+    100%{
+        background: url(bg4.jpg);
+    }
+}
+.form{
+    background: rgba(27, 27, 27, 0.363);
+    position: absolute;
+    margin-top: -32rem;
+    margin-left: 13rem;
+    width: 70%;
+    height: 70%;
+    color: blanchedalmond;
+    border-radius: 1.5rem;
+}
+.fhead{
+    text-align: center;
+    padding-top: 2rem;
+    color: rgb(252, 6, 109);
+    font-size: 2rem;
+}
+form{
+    padding-left: 5rem;
+   
+}
+.form span{
+    font-size: 2rem;
+   word-spacing: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.form input{
+    width: 30rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    background-color: rgba(226, 197, 122, 0.767);
+   border-color: solid 2px rgb(2, 2, 2);
+   text-align: center;
+   color: black;
+}
+.form input:hover{
+    background-color: rgba(132, 160, 173, 0.815);
+    display: inline;
+    transition: transform 0.5s;
+    transform: scale(1.1);
+}
